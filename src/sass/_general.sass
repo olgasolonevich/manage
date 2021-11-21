@@ -48,6 +48,7 @@ header
                 display: inline-flex
                 align-items: center
                 user-select: none
+                cursor: pointer
                 &::before
                     content: ''
                     display: inline-block
@@ -326,4 +327,9 @@ footer
                     @include transition
                     &:hover
                         color: $hover-pink
+::-webkit-scrollbar 
+    width: 10px
+    background-color: $back-two
+::-webkit-scrollbar-thumb
+    background-color: $hover-pink
 
