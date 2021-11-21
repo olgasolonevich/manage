@@ -34,10 +34,6 @@ header
     display: flex
     &__duration 
         width: 240px
-        // display: flex
-        // flex-direction: row
-        // flex-wrap: wrap
-        // justify-content: space-between
         display: inline-block
         columns: 2
         &__checkbox
@@ -65,7 +61,7 @@ header
                 background-image: url("../icons/check.png")
                 background-size: 75% 60%
             &:not(:disabled):not(:checked) + label:hover::before
-                background-color: $hover-pink
+                background-color: $back
     &__item
         display: flex
     &__select

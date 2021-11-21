@@ -41,10 +41,9 @@
             grid-template-columns: repeat(2, 50%)
             width: 100%
             margin-top: 20px
-            &:checkbox
-                &+label
-                    &:not(:disabled):not(:checked) + label:hover::before
-                        background-color: #6e6e6e
+            &__checkbox
+                &:not(:disabled):not(:checked) + label:hover::before
+                    background-color: $back
     
     .task
         &__vacation, &__cinema, &__dinner, &__coffee
