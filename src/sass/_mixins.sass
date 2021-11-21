@@ -1,0 +1,70 @@
+@mixin choice
+    cursor: pointer
+    background: #FDFDFD
+    font-weight: 500
+    font-size: 16px
+    color: $text
+    width: 50%
+    text-align: center
+    line-height: 32px
+
+@mixin task 
+    position: relative
+    cursor: pointer
+    min-height: 350px
+    background-color: $back-two
+    padding-bottom: 20px
+    border-radius: 2px
+
+@mixin small-task
+    cursor: pointer
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    min-height: 175px
+    background: #FDFDFD
+    padding: 30px 20px 20px 20px
+    border-radius: 2px
+
+@mixin img
+    transition: 0.5s all
+    height: 255px
+    width: 100%
+    
+@mixin hover    
+    &:hover
+        transition: 0.5s all
+        box-shadow: 0px 0px 30px white
+        .task__img      
+            -webkit-box-shadow: 2px -100px 72px -8px white inset
+            -moz-box-shadow: 2px -100px 72px -8px white inset
+            box-shadow: 2px -100px 72px -8px white inset
+
+@mixin hover-img        
+    &:hover      
+        -webkit-box-shadow: 2px -100px 72px -8px white inset
+        -moz-box-shadow: 2px -100px 72px -8px white inset
+        box-shadow: 2px -100px 72px -8px white inset
+            
+
+@mixin title
+    font-weight: 900
+    font-size: 35px
+    color: #FFFFFF
+    text-transform: lowercase
+    &:after 
+        content: ''
+        display: inline-block
+        background-color: #FDF1FF
+        width: 12px
+        height: 12px
+        border-radius: 100%
+        margin: 0 0 3px 3px
+        
+@mixin active
+    &:active
+                background-color: $purple
+                color: $back-two
+
+@mixin transition
+    transition: 0.5s all

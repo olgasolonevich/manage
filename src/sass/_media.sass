@@ -1,0 +1,84 @@
+@media (max-width: 1200px)
+    .manager
+        &__item
+            flex-direction: column
+            align-items: center
+            transform: translateY(-20%)
+        &__select
+            margin-right: 0
+            margin-bottom: 16px
+
+@media (max-width: 992px)
+    .task
+        &__create, &__cinema, &__doctor, &__meeting, &__dinner, &__coffee, &__massage, &__vacation
+            margin-bottom: 20px
+            margin-top: 0
+            // &:last-child
+            //     margin-bottom: 0
+                
+    footer
+        .footer__networks__item
+            margin-right: 25px
+    
+@media (max-width: 767px)
+    header
+        .menu
+            display: none
+    .manager
+        padding: 20px 15px 30px
+        .justify-content-end
+            justify-content: start !important
+        &__item
+            transform: none
+            margin-top: 20px
+            display: grid
+            grid-template-rows: repeat(2, 50%)
+            grid-template-columns: repeat(2, 50%)
+        &__select
+            margin-bottom: 0
+        &__duration
+            display: grid
+            grid-template-rows: repeat(2, 50%)
+            grid-template-columns: repeat(2, 50%)
+            width: 100%
+            margin-top: 20px
+            &:checkbox
+                &+label
+                    &:not(:disabled):not(:checked) + label:hover::before
+                        background-color: #6e6e6e
+    
+    .task
+        &__vacation, &__cinema, &__dinner, &__coffee
+            min-height: 300px
+
+    footer
+        position: fixed
+        bottom: 0
+        height: 44px 
+        width: 100%
+        .footer
+            display: none
+        .footer__mobile
+            display: flex
+            // position: fixed
+    
+@media (max-width: 576px)
+    .manager
+        margin-top: 14px
+        padding: 20px 0 30px
+        &__select, &__choice
+            width: 140px
+    .task
+        padding: 14px 5px
+        &__create
+            height: 60px
+        &__create, &__cinema, &__doctor, &__meeting, &__dinner, &__coffee, &__massage, &__vacation
+            margin-bottom: 14px 
+    // footer
+    //     .footer
+    //         display: none
+    //     .footer__mobile
+    //         display: block
+    
+    
+    
